@@ -1,0 +1,357 @@
+
+/* Heebo */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+
+/* Black Ops One */
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+
+/* Logo */
+
+div .logo {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    right: 33px;
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 65px;
+    color: #000;
+
+}
+
+
+/* floating navbar  */
+
+
+.navbar-container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+nav .menus-container{
+    list-style: none;
+    display:inline-block; 
+}
+
+.menus-container {
+    /* border: 3px solid black;
+    fill: none;
+    background: transparent;
+    border-radius: 50px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4); */
+    width: 930px;
+    height: 75px;
+    transform: rotate(0.21deg);
+    flex-shrink: 0;
+    border-radius: 14px;
+    border: 4px solid #000;
+    background: #FFFEFE;
+    box-shadow: 10px 10px 0px 0px #000;
+}
+
+/* .menu-svg {
+    background: none;
+    color: #fff;
+} */
+
+nav .menus-container .menu-text {
+    list-style: none;
+    display:inline-block;
+    padding: 5px 25px;
+    margin: 8px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+
+    color: #000;
+    font-family: 'Heebo', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+} 
+
+ nav .menus-container .menu-text::after {
+    content: '';
+    background: #000;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+nav .menus-container .menu-text:hover {
+    color: #fff;
+}
+
+nav .menus-container .menu-text:hover::after {
+    top: 50%;
+    opacity: 1;
+} 
+
+/* white-pt */
+
+div .white-pt {
+    /* background-color: aquamarine; */
+}
+
+/* left-slide-bar */
+
+div .left-slide-bar {
+    width: 250px;
+    /* height: 823px; */
+    flex-shrink: 0;
+    height: 79vh;
+    border-radius: 21px;
+    border: 4px solid #000;
+    background: #FFF;
+    box-shadow: 10px 10px 0px 0px #000;
+    z-index: 999;
+}
+
+ div .left-slide-bar nav .text-row {
+    margin-bottom: 20px;
+    list-style: none;
+    margin: 10px 2 2 5px;
+}
+
+div .left-slide-bar .left-text-row #text::placeholder{
+    color: gray;
+    opacity: 0.7;
+}
+
+input[type=text] {
+    padding: 6px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+/* .button-svg {
+    width: 55px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 3.5px solid #000;
+    background: #FFF;
+    box-shadow: 2px 4px 0px 0px #000;
+    margin: 10px;
+    margin-left: 30px;
+} */
+
+.span-text {
+    font-family: 'Heebo', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.left-bar-button {
+    border: none;
+    font-family: 'Heebo', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.left-bar-button:hover {
+    background-color: #000;
+    color: #FFF;
+    font-family: 'Heebo', sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+.left-bar-button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+.left-bar-button:before {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 0px;
+    width: 100%;
+    z-index: -1;
+    content: '';
+    color: #FFF;
+    background: #000;
+}
+
+.left-slide-bar .left-slide-board button .submit-button {
+    background: #fff;
+    color: #000;
+    transition: all 0,2s ease;
+}
+
+.left-slide-bar .left-slide-board button .submit-button:active {
+    background: #000;
+    color: #FFF;
+    transform: scale(0.96);
+}
+
+
+
+
+
+
+
+
+/* canvas */
+
+div .canvas {
+    width: 780px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 33px;
+    border: 5px solid #000;
+    background: #FFF;
+}
+
+/* right-slide-bar */
+div .right-slide-bar {
+    width: 250px;
+    /* height: 823px; */
+    height: 79vh;
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 4px solid #000;
+    background: #FFF;
+    box-shadow: 10px 10px 0px 0px #000;
+    z-index: 999;
+}
+
+.right-line-row .right-line-option {
+    font-family: 'Heebo', sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+input #drawing-color {
+    margin-left: 150px;
+}
+
+
+
+/* line width input range */
+
+.right-line-option .box {
+    margin-top: 33px;
+    margin-left: 60px;
+
+}
+
+input[type="range"] {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: block;
+    width: 80%;
+    height: 9px;
+    background-color: #d5d5d5;
+    border-radius: 8px;
+    outline: none;
+}
+
+input[type="range"]
+::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    height: 8px;
+}
+
+input[type="range"]::-moz-track {
+    -moz-appearance:none;
+    height: 8px;
+}
+
+input[type="range"]::-ms-track {
+    appearance: none;
+    height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -2px;
+    border: none;
+}
+
+input[type="range"]::-moz-range-thumb{
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -2px;
+    border: none;
+}
+
+input[type="range"]::-ms-thumb {
+    appearance: none;
+    height: 17px;
+    width: 17px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: -2px;
+    border: none;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+    background-color: #fff;
+    border: 4px solid #000;
+}
+
+#slider-value {
+    width: 15%;
+    height: 23px;
+    position: absolute;
+    bottom: 7px;
+    left: 79%;
+    background-color: #000;
+    color:#fff;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+    padding: 2px 0;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+/* gap-pt-1 */
+div .gap-pt-1 {
+    width:160px;
+}
+
+/* gap-pt-2 */
+div .gap-pt-2 {
+    width:125px;
+}
