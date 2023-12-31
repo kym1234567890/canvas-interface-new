@@ -7,6 +7,7 @@
 
 
 
+
 * {
     margin: 0;
     padding: 0;
@@ -165,40 +166,45 @@ input[type=text] {
     font-weight: 400;
 }
 
+
 .left-bar-button {
     border: none;
+    background: none;
+    cursor: pointer;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
     font-family: 'Heebo', sans-serif;
     font-size: 21px;
     font-weight: 400;
+    color: #000;
+    z-index: 2;
 }
 
-.left-bar-button:hover {
-    background-color: #000;
-    color: #FFF;
-    font-family: 'Heebo', sans-serif;
-    font-size: 21px;
-    font-weight: 400;
-    text-shadow: none;
+.left-bar-button:hover{
+    color:#fff;
 }
 
-.left-bar-button:hover:before {
-    bottom: 0%;
-    top: auto;
-    height: 100%;
-}
-
-.left-bar-button:before {
-    display: block;
+.left-bar-button::before {
+    content: "";
     position: absolute;
-    left: 0px;
-    top: 0px;
-    height: 0px;
+    left: 0;
     width: 100%;
-    z-index: -1;
-    content: '';
-    color: #FFF;
+    height: 0%;
     background: #000;
+    z-index:-1;
+    transition: 0.8s;
 }
+
+.left-bar-button::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.left-bar-button:hover::before {
+    height: 180%;
+}
+
 
 .left-slide-bar .left-slide-board button .submit-button {
     background: #fff;
@@ -355,3 +361,4 @@ div .gap-pt-1 {
 div .gap-pt-2 {
     width:125px;
 }
+

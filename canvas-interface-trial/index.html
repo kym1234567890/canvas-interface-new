@@ -53,68 +53,44 @@
   <div class="left-slide-board">
     <ul class="left-text-row" style="list-style: none; margin: 25px; display: flex; flex-direction: column;">
       <li class="left-option active tool" id="drawing-mode">
-        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px; border-radius: 10px;">
-          <i class="fa-solid fa-paintbrush" style="background-color: transparent;" ></i>
+        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px;">
+          <i class="fa-solid fa-paintbrush" style="background-color: transparent;"></i>
           Brush
         </button>
       </li>
       <li class="left-option tool" id="circ">
-        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px; border-radius: 10px;">
+        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px;">
           <i class="fa-regular fa-circle" style="background-color: transparent;"></i>
           Circle
         </button>
       </li>
       <li class="left-option tool" id="rect" >
-        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px; border-radius: 10px;">
+        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px;">
           <i class="fa-regular fa-square" style="background-color: transparent;"></i>
         Rectangle
         </button>
       </li>
       <li class="left-option tool" id="eraser">
-        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px; border-radius: 10px;">
+        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px;">
           <i class="fa-solid fa-eraser" style="background-color: transparent;"></i>
         Eraser
         </button>
       </li>
       <li class="left-option tool" id="curve">
-        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px; border-radius: 10px;">
+        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px;">
           <i class="fa-solid fa-bezier-curve" style="background-color: transparent;"></i>
         curve
         </button>
       </li>
       <li class="left-option tool" id="add-text">
-        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px; border-radius: 10px;">
+        <button class="left-bar-button" style="width: 242px; height: 70px; position: relative; right: 69px;">
           <i class="fa-solid fa-t" style="background-color: transparent;"></i>
         Text
         </button>
       </li>
     </ul>
     <input type="text" id="text" placeholder="TEXT" style="width: 130px; margin-left: 45px;">
-    <button class="submit-button" style="margin-top: 40px; margin-left: 35px;  width: 150px; height: 45px; flex-shrink: 0; border-radius: 12px; border: 3.5px solid #000; background: #FFF; box-shadow: 2px 4px 0px 0px #000; font-size: 19px;  font-weight: 800; font-family: 'Heebo', sans-serif;">SUBMIT</button>
-    <!-- <table class="table-borderless"  >
-      <tbody>
-      <tr>
-        <th><button class="button-svg"><img src="/SVG/circle.svg" alt=""></button></th>
-        <th><button class="button-svg"><img src="/SVG/rectangle.svg" alt=""></button></th>
-      </tr>
-      <tr>
-        <th ><button class="button-svg"><img src="/SVG/eraser.svg" alt=""></button></th>
-        <th><button class="button-svg"><img src="/SVG/curved line.svg" alt=""></button></th>
-      </tr>
-      <tr>
-        <th><button class="button-svg"><img src="/SVG/undo.svg" alt=""></button></th>
-        <th><button class="button-svg"><img src="/SVG/redo.svg" alt=""></button></th>
-      </tr>
-      <tr>
-        <th><button class="button-svg"><img src="/SVG/save.svg" alt=""></button></th>
-        <th><button class="button-svg"><img src="/SVG/clear.svg" alt=""></button></th>
-      </tr>
-      <tr>
-        <th><button class="button-svg"><img src="/SVG/drag-drop.svg" alt=""></button></th>
-        <th><button class="button-svg"><img src="/SVG/text-size.svg" alt=""></button></th>
-      </tr>
-      </tbody>
-    </table> -->
+    <button class="submit-button" style="margin-top: 30px; margin-left: 35px;  width: 150px; height: 45px; flex-shrink: 0; border-radius: 12px; border: 3.5px solid #000; background: #FFF; box-shadow: 2px 4px 0px 0px #000; font-size: 19px;  font-weight: 800; font-family: 'Heebo', sans-serif;">SUBMIT</button>
   </div>
 </div>
 
@@ -139,8 +115,6 @@
     
     <ul class="right-line-row" style="list-style: none; margin: 20px; display: flex; flex-direction: column; gap: 15px;">
       <li class="right-line-option" id="drawing-mode-options">
-    <!-- <div style="display: inline-block; margin-top: 20px; width: 100%;"> -->
-            <!-- <div id="drawing-mode-options" style="text-align: center;"> -->
                 <label for="drawing-mode-selector" class="">Mode:</label>
                 <select id="drawing-mode-selector" class="text-gray-900">
                     <option>Pencil</option>
@@ -151,7 +125,6 @@
 
               <li class="right-line-option">
                 <label for="drawing-line-width" style="z-index: 999;">Line width:</label>
-                <!-- <span class="info">5</span><input type="range" value="5" min="0" max="150" id="drawing-line-width"><br> -->
                 <div class="box" style="width: 200px; height: 10px; padding: 23px 10px; background-color: #fff; transform: translate(-50%, -50%); border: 3px solid #000; border-radius: 10px; box-shadow: 3px 2px 0px 0px #000;">
                   <input type="range" id="my-slider" min="0" max="50" value="16" oninput="slider()">
                   <div id="slider-value">0</div>
@@ -172,23 +145,13 @@
                 <label for="drawing-shadow-width">Shadow width: </label>
                 <span class="info">0</span>
                 <input  type="range" value="0" min="0" max="50" id="drawing-shadow-width" style="background-color: black; margin-top: 15px;"><br>
-                <!-- <div class="box" style="width: 200px; height: 10px; padding: 23px 10px; background-color: #fff; transform: translate(-50%, -50%); border: 3px solid #000; border-radius: 10px; box-shadow: 3px 2px 0px 0px #000;">
-                  <input type="range" id="my-slider" min="0" max="50" value="16" oninput="slider()">
-                  <div id="slider-value">0</div>
-                </div> -->
               </li>
               
               <li class="right-line-option">
                 <label for="drawing-shadow-offset">Shadow offset: </label>
                 <span class="info">0</span>
                 <input type="range" value="0" min="0" max="50" id="drawing-shadow-offset" style="background-color: black; margin-top: 15px;"><br>
-                <!-- <div class="box" style="width: 200px; height: 10px; padding: 23px 10px; background-color: #fff; transform: translate(-50%, -50%); border: 3px solid #000; border-radius: 10px; box-shadow: 3px 2px 0px 0px #000;">
-                  <input type="range" id="my-slider" min="0" max="50" value="16" oninput="slider()">
-                  <div id="slider-value">0</div>
-                </div> -->
               </li>
-            <!-- </div> -->
-        <!-- </div> -->
     </ul>
 
 
